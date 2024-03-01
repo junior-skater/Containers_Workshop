@@ -1,0 +1,14 @@
+- name: creating container config
+  hosts: localhost
+  gather_facts: false
+  tasks:
+   - name: creating container
+     containers.podman.podman_container:
+       name: Workshop
+       image: httpd
+       state: started
+       volume:
+        - /home/student/container:/container
+       publish:
+        - '8088:80'
+     become: false
