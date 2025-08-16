@@ -1,6 +1,6 @@
 ---
 - name: listen urls events
-  hosts: all 
+  hosts: localhost 
   
   sources: 
    - name: Match web server events
