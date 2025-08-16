@@ -4,10 +4,10 @@
    - name: install package
      ansible.builtin.package:
        name: cockpit
-       state: started
+       state: present
    - name: enable and start service
      ansible.builtin.service:
        name: cockpit.socket
-       status: started
+       state: started
        enabled: yes
        
