@@ -1,5 +1,5 @@
 - name: creating container config
-  hosts: all
+  hosts: rhel9
   gather_facts: false
   tasks:
    - name: creating container
