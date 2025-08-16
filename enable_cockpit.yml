@@ -1,0 +1,13 @@
+- name: install and enable cockpit
+  hosts: aap
+  tasks:
+   - name: install package
+     ansible.builtin.package:
+       name: cockpit
+       state: started
+   - name: enable and start service
+     ansible.builtin.service:
+       name: cockpit.socket
+       status: started
+       enabled: yes
+       
