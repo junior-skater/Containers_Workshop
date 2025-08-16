@@ -13,7 +13,7 @@
   rules: 
    - name: Exec play
      condition: event.url_check.status == "down"
-     actions:
+     action:
        run_job_template: 
          name: Podman_Containers
          organization: Default
