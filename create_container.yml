@@ -5,10 +5,7 @@
    - name: creating container
      containers.podman.podman_container:
        name: Workshop
-       image: httpd
+       image: registry.redhat.io/rhel8/httpd-24
        state: started
-       volume:
-        - /home/student/container:/container
        publish:
         - '8088:80'
-     become: false
