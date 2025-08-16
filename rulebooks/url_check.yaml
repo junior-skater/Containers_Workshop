@@ -16,5 +16,5 @@
      actions:
        run_job_template: 
          name: Deploy_Container_APP1
-         organization: DEMO
+         organization: Default
 
