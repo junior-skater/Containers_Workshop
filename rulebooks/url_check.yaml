@@ -15,6 +15,6 @@
      condition: event.url_check.status == "down"
      actions:
        run_job_template: 
-         name: Deploy_Container_APP1
+         name: Podman_Containers
          organization: Default
 
